@@ -58,7 +58,8 @@ python3 -m pip install cryptography Twisted bitstring MarkupSafe bitarray config
 # Desactivar el entorno virtual
 deactivate
 
-#pip install cryptography pyopenssl autobahn Twisted bitstring MarkupSafe bitarray configparser aprslib attrs wheel service_identity pyOpenSSL mysqlclient tinydb ansi2html mysql-connector-python pandas xlsxwriter cursor pynmea2 maidenhead flask folium mysql-connector resettabletimer setproctitle requests libscrc Pyro5
+pip3 install --break-system-packages cryptography pyopenssl autobahn Twisted bitstring MarkupSafe bitarray configparser aprslib attrs wheel service_identity pyOpenSSL mysqlclient tinydb ansi2html mysql-connector-python pandas xlsxwriter cursor pynmea2 maidenhead flask folium mysql-connector resettabletimer setproctitle requests libscrc Pyro5
+#pip install  cryptography pyopenssl autobahn Twisted bitstring MarkupSafe bitarray configparser aprslib attrs wheel service_identity pyOpenSSL mysqlclient tinydb ansi2html mysql-connector-python pandas xlsxwriter cursor pynmea2 maidenhead flask folium mysql-connector resettabletimer setproctitle requests libscrc Pyro5
 
 cd /opt
 # Instalar Rust y configurar versión
@@ -83,12 +84,12 @@ echo "Instalación completa."
 
 ####################
 cd /opt/
-git clone https://github.com/hp3icc/D-APRS.git
+git clone https://github.com/ea5gvk/D-APRS.git
 
 sudo cat > /bin/menu-igate <<- "EOF"
 #!/bin/bash
 while : ; do
-choix=$(whiptail --title "D-APRS KF7EEL / Raspbian Proyect HP3ICC Esteban Mackay 73." --menu "Suba o Baje con las flechas del teclado y seleccione el numero de opcion:" 16 65 7 \
+choix=$(whiptail --title "D-APRS KF7EEL / Raspbian Proyect HP3ICC, adaptado por EA5GVK - Joaquin 73." --menu "Suba o Baje con las flechas del teclado y seleccione el numero de opcion:" 16 65 7 \
 1 " Editar igate" \
 2 " Iniciar Igate " \
 3 " Detener Igate " \
